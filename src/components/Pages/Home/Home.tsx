@@ -3,11 +3,16 @@ import Table from "../../Molecules/Table/Table";
 import BasicTemplate from "../../Templates/Basic/BasicTemplate";
 import { Product } from "../../../interfaces/global";
 import { fetchProducts } from "../../../utils/fetchProducts";
-import NavLink from "../../Atoms/NavLink/NavLink";
-import { Button } from "../../../stories/Button";
+import { useNavigate } from "react-router-dom";
+import { Button } from "../../Atoms/Button/Button";
 
 const Home: React.FC = () => {
   const [productData, setProductData] = useState<Product[]>([]);
+  const navigate = useNavigate();
+  
+  const navigateToId = (destiny: string, product: Product): void => {
+    navigate(destiny, { state: product });
+  };
 
   // Define the columns for the table
   const columns = [
@@ -32,9 +37,9 @@ const Home: React.FC = () => {
       accessor: (row: Product) => row.category,
     },
     {
-      key: 'Ações',
-      header: 'Ações',
-      accessor: (row: Product) => <NavLink linkPath={row.id.toString()}><Button label="Ver Detalhes" /></NavLink>, // Format the price
+      key: 'Actions',
+      header: 'Actions',
+      accessor: (row: Product) => <Button label="See Details" onClick={() => navigateToId("/details/" + row.id.toString(), row)} />, 
     },
   ];
 
