@@ -3,6 +3,8 @@ import Table from "../../Molecules/Table/Table";
 import BasicTemplate from "../../Templates/Basic/BasicTemplate";
 import { Product } from "../../../interfaces/global";
 import { fetchProducts } from "../../../utils/fetchProducts";
+import NavLink from "../../Atoms/NavLink/NavLink";
+import { Button } from "../../../stories/Button";
 
 const Home: React.FC = () => {
   const [productData, setProductData] = useState<Product[]>([]);
@@ -30,9 +32,9 @@ const Home: React.FC = () => {
       accessor: (row: Product) => row.category,
     },
     {
-      key: 'price',
-      header: 'Price',
-      accessor: (row: Product) => `$${row.price.toFixed(2)}`, // Format the price
+      key: 'Ações',
+      header: 'Ações',
+      accessor: (row: Product) => <NavLink linkPath={row.id.toString()}><Button label="Ver Detalhes" /></NavLink>, // Format the price
     },
   ];
 
