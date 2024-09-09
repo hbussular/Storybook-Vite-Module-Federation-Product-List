@@ -1,4 +1,4 @@
-import { JustChildrenProps } from "../../../types/global"
+import { JustChildrenProps } from "../../../interfaces/global"
 import "./styles.css"
 
 const Text: React.FC<JustChildrenProps> = ({ children }) => {
