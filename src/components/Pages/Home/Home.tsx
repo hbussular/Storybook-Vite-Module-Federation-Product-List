@@ -5,6 +5,8 @@ import { Product } from "../../../interfaces/global";
 import { fetchProducts } from "../../../utils/fetchProducts";
 import { useNavigate } from "react-router-dom";
 import { Button } from "../../Atoms/Button/Button";
+import FooterAntd from "jeff/Footer"
+
 
 const Home: React.FC = () => {
   const [productData, setProductData] = useState<Product[]>([]);
@@ -50,9 +52,14 @@ const Home: React.FC = () => {
   }, []);
 
   return (
-    <BasicTemplate>
-      <Table columns={columns} data={productData} />
-    </BasicTemplate>
+    <div>
+        <BasicTemplate>
+            <Table columns={columns} data={productData} />
+            <FooterAntd />
+        </BasicTemplate>
+
+    </div>
+
   );
 };
 
