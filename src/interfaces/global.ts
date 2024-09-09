@@ -16,6 +16,11 @@ export interface HomePageProps {
     children: ReactNode
 }
 
+export interface NavLinkProps {
+    linkPath: string;
+    children: ReactNode;
+}
+
 
 // Product Info
 interface Dimensions {
