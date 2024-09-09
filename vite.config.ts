@@ -13,13 +13,14 @@ export default defineConfig({
         './ProductDetails': './src/components/Pages/ProductDetails/ProductDetails.tsx', // Exposing Product Details
       },
       remotes: {
-        // otherApp: 'otherApp@http://localhost:3001/remoteEntry.js', // URL of remote app's remoteEntry.js file
+        micro_front_components: 'micro_front_components@http://localhost:3001/remoteEntry.js', // URL of remote app's remoteEntry.js file
         // anotherRemote: 'anotherRemote@http://localhost:3002/remoteEntry.js', // Another remote app URL
       },
       shared: ['react', 'react-dom'], // Dependencies that should be shared between federated modules
     }),
   ],
   build: {
+    outDir: 'src/dist', // Specify the output directory inside src
     target: 'esnext',
   },
 });
