@@ -1,4 +1,4 @@
-**React + TypeScript + Vite with Atomic Design and Module Federation**
+**React + TypeScript + Storybook + Vite with Atomic Design and Module Federation**
 
 This small project is built using React, TypeScript, and Vite as the main tools for developing and bundling the application. It follows the React Atomic Design pattern to organize components in a structured manner and incorporates Storybook to test components individually. Additionally, the project utilizes Vite Module Federation, allowing for the integration and rendering of components from remote modules, implementing micro front-end architecture.
 
