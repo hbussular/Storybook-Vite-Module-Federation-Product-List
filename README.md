@@ -16,7 +16,7 @@ This project is built using React, TypeScript, and Vite as the main tools for de
 
     - Dynamic Table and Product Details: The main application consists of a table that displays product data fetched from https://dummyjson.com/products and a details page for each product, allowing users to see more information about a specific item.
 
-    - React Router DOM v6.26.2: for routing purposes, state transfer and navigation between pages
+    - React Router DOM v6.26.2: for routing purposes, state transfer and navigation between pages.
 
 
 
