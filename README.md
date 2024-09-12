@@ -56,6 +56,6 @@ These screenshots show the main components of the application, including the tab
 ![product-details-page](Product-Details.png)
 
 
-In the bottom part of the Table Page, you can find a footer that was imported from a remote module using Vite Module Federation. In addition to this, both the Table Page and Product Details Page are exposed in the vite.config.ts file and able to be used in other applications that are in the vite module federation. This is a successful attempt at implementing micro front-end architecture.
+In the bottom part of the Table Page, you can find a footer that was imported from a remote module using Vite Module Federation. In addition to this, both the Table Page and Product Details Page are exposed in the vite.config.ts file and able to be used in other applications that are in the vite module federation. This application was done as a successful test at implementing micro front-end architecture.
 
 September, 2024
