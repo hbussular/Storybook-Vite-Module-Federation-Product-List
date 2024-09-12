@@ -16,17 +16,17 @@ This project is built using React, TypeScript, and Vite as the main tools for de
 
 **Running The Project**
 
-In order to run the project, execute the command: npm run dev
+In order to run the project, execute the command: _npm run dev_
 
-In order to run the project and expose its components to other remote aplicattions, first run 'npm run build'. After a successful build, run 'npm run preview' in order to get the app in preview mode. The components you expose can be found in the vite.config.ts file.
+In order to run the project and expose its components to other remote aplicattions, first run _npm run build_. After a successful build, run _npm run preview_ in order to get the app in preview mode. The components you expose can be found in the _vite.config.ts_ file.
 
 **Screenshots**
 
 These screenshots show the main components of the application, including the table that displays product data and the detailed view for each product.
 
 Product Table:
-![Products Table Page](../products-app/src/assets/Product-Table.png "optional title")
+![Products Table Page](../products-app/src/assets/Product-Table.png)
 
 Product Details Page:
-![Product Details Page](../products-app/src/assets/Product-Details.png "optional title")
+![Product Details Page](../products-app/src/assets/Product-Details.png)
 
