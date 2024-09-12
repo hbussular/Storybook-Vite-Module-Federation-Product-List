@@ -48,7 +48,12 @@ These screenshots show the main components of the application, including the tab
 
 ![product-table-page](Product-Table.png)
 
+
     Product Details Page:
 
 ![product-details-page](Product-Details.png)
 
+
+In the bottom part of the Table Page, you can find a footer that was imported from a remote module using Vite Module Federation. This is a successful test implementation of micro-front-end architecture.
+
+September, 2024
