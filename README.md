@@ -12,7 +12,7 @@ This project is built using React, TypeScript, and Vite as the main tools for de
 
     - Storybook Integration: Allows developers to visually test individual components in isolation.
 
-    - Vite Module Federation: Enables the application to consume and render components from remote modules.
+    - Vite Module Federation: Enables the application to consume and render components from remote modules. The application is also exposing its page components as a host application.
 
     - Dynamic Table and Product Details: The main application consists of a table that displays product data fetched from https://dummyjson.com/products and a details page for each product, allowing users to see more information about a specific item.
 
@@ -56,6 +56,6 @@ These screenshots show the main components of the application, including the tab
 ![product-details-page](Product-Details.png)
 
 
-In the bottom part of the Table Page, you can find a footer that was imported from a remote module using Vite Module Federation. This is a successful test implementation of micro-front-end architecture.
+In the bottom part of the Table Page, you can find a footer that was imported from a remote module using Vite Module Federation. In addition to this, both the Table Page and Product Details Page are exposed in the vite.config.ts file and able to be used in other applications that are in the vite module federation. This is a successful attempt at implementing micro front-end architecture.
 
 September, 2024
