@@ -1,0 +1,67 @@
+.table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    font-family: Arial, sans-serif;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a soft shadow around the table */
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+  /* Styling for the header row */
+  thead {
+    background-color: #4CAF50; /* A nice green for the header */
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    font-size: 14px;
+  }
+  
+  .upper-row th {
+    padding: 12px;
+    border-bottom: 2px solid #ddd;
+  }
+  
+  /* Basic cell styling */
+  th, td {
+    padding: 12px 15px;
+    text-align: left;
+  }
+  
+  /* Alternating row colors for better readability */
+  tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  /* Hover effect on table rows */
+  tbody tr:hover {
+    background-color: #f1f1f1;
+    cursor: pointer; /* Indicates clickable rows */
+  }
+  
+  /* Add some border to the cells */
+  td {
+    border-bottom: 1px solid #ddd;
+  }
+  
+  /* Styling for action buttons in the actions column */
+  button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    margin-right: 5px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  
+  button:focus {
+    outline: none;
+    box-shadow: 0 0 2px 2px #4CAF50;
+  }
+  
