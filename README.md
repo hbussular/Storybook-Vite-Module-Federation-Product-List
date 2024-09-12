@@ -1,50 +1,16 @@
-# React + TypeScript + Vite
+**React + TypeScript + Vite with Atomic Design and Module Federation**
+This project is built using React, TypeScript, and Vite as the main tools for developing and bundling the application. It follows the Atomic Design pattern to organize components in a structured manner and incorporates Storybook to test components individually. Additionally, the project utilizes Vite Module Federation, allowing for the integration and rendering of components from remote modules.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Key Features**
+React + TypeScript + Vite: Provides a fast, modern setup for building React applications with TypeScript support and Vite's fast refresh capabilities.
+Atomic Design: Implements the Atomic Design pattern to organize components in a scalable and maintainable manner.
+Storybook Integration: Allows developers to visually test individual components in isolation.
+Vite Module Federation: Enables the application to consume and render components from remote modules.
+Dynamic Table and Product Details: The main application consists of a table that displays product data fetched from https://dummyjson.com/products and a details page for each product, allowing users to see more information about a specific item.
+Screenshots
 
-Currently, two official plugins are available:
+Product Table
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Product Details Page
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
-
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
-
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+These screenshots show the main components of the application, including the table that displays product data and the detailed view for each product.
