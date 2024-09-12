@@ -6,7 +6,7 @@ This project is built using React, TypeScript, and Vite as the main tools for de
 
 **Key Features**
 
-- React + TypeScript + Vite: Provides a fast, modern setup for building React applications with TypeScript support and Vite's fast refresh capabilities.
+    - React + TypeScript + Vite: Provides a fast, modern setup for building React applications with TypeScript support and Vite's fast  refresh capabilities.
 
     - Atomic Design: Implements the Atomic Design pattern to organize components in a scalable and maintainable manner.
 
@@ -22,19 +22,19 @@ This project is built using React, TypeScript, and Vite as the main tools for de
 
 In order to run the project, execute the command: 
 
-    _npm run dev_
+    npm run dev
 
 In order to run storybook and test each component individually, execute the command:
 
-    _npm run storybook_
+    npm run storybook
 
 In order to run the project and expose its components to other remote aplicattions, first run: 
 
-    _npm run build_. 
+    npm run build
 
 After a successful build, run this in order to get the app in preview mode.:
 
-    _npm run preview_ 
+    npm run preview
 
 The components you expose can be found in the _vite.config.ts_ file.
 
