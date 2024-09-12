@@ -25,7 +25,7 @@ In order to run the project and expose its components to other remote aplicattio
 These screenshots show the main components of the application, including the table that displays product data and the detailed view for each product.
 
 Product Table:
-![Products Table Page](../products-app/src/assets/Product-Table.png)
+![Products Table Page](https://ibb.co.com/ZTLbzf7)
 
 Product Details Page:
 ![Product Details Page](../products-app/src/assets/Product-Details.png)
